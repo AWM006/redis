@@ -1,0 +1,30 @@
+REDIS is a chache memory store system 
+
+guess a database where hit 1000 same request which make the database unnecesarily process the same work
+
+here redis came it a temorarily data store application where we fetch data from database then store to it temporarily 
+now if again same request came insted of request to database we can get to through our chache or redis
+
+
+
+
+we used windows system for this 
+we gonna use dockerise redis system where we use docker
+all command we got from official redis documentations
+
+
+before we start we assume you know SQL, MONGO, NODE JS and Docker let's start
+we use 8.10.3 version of redis here if you want to switch the version you can but different version sometimes has different function or bugs
+
+
+
+
+
+to run a Radis container we need to use command  
+    
+    "docker run -d --name redis -p 6379:6379 redis:8.10.3"      # it pull and start the image into a container if alrady exist then only run a container
+    
+    "docker exec -it redis redis-cli"       #it will enter in the redis shell
+
+
+once you got the Shell of redis type "INFO SERVER" for your redis server information
